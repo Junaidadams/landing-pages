@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+.scroll-container {
+  height: 100vh; /* Make the container the height of the viewport */
+  overflow-y: scroll; /* Enable vertical scrolling */
+  scroll-snap-type: y mandatory; /* Enforce snapping on the y-axis */
+}
+
+.scroll-section {
+  height: 100vh; /* Each section takes up the full height of the container */
+  scroll-snap-align: start; /* Snap the start (top) of the section to the start of the container */
+  /* Add other styling for visual distinction */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
