@@ -2,6 +2,7 @@
 
 @theme {
   --font-telma: "Telma", "cursive";
+  --font-alpino: "Alpino", sans-serif;
 }
 
 .scroll-container {
