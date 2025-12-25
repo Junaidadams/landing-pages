@@ -65,7 +65,7 @@ function App() {
               characteristic.
             </p>
             <button
-              className="text-xl py-4 px-3 m-auto xl:mr-auto xl:ml-0 rounded-sm font-black font-telma animate-pulse hover:animate-none hover:cursor-pointer hover:shadow-lg shadow-[#ffffff1e]"
+              className="text-xl py-4 px-3 mt-1 m-auto xl:mr-auto xl:ml-0 rounded-sm font-black font-telma animate-pulse hover:animate-none hover:cursor-pointer hover:shadow-lg shadow-[#ffffff1e]"
               style={{
                 background: page1Colour[1],
                 color: page1Colour[0],
@@ -126,13 +126,9 @@ function App() {
 
         <div className="font-light sm:text-8xl text-4xl text-center font-alpino rounded-full px-2 py-14">
           <h2 className="font-light sm:text-6xl text-3xl font-alpino">
-            This font is called
+            Reach new heights with
           </h2>
-
           <h2 className="font-alpino">Alpino</h2>
-          {/* <h2 className=" opacity-75">"Telma"</h2>
-          <h2 className=" opacity-50">"Telma"</h2>
-          <h2 className=" opacity-25">"Telma"</h2> */}
         </div>
 
         <div className="absolute bottom-2 left-2 flex space-x-2">
