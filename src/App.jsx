@@ -45,7 +45,7 @@ function App() {
         </nav>
 
         <div className="flex flex-col xl:flex-row w-full">
-          <div className="font-black sm:text-5xl md:text-6xl text-4xl text-center font-telma bg-linear-to-b from-[#ffffff07] to-[#fff0] rounded-full  w-5/6  mx-auto lg:w-1/3 mb-2">
+          <div className="font-black sm:text-5xl md:text-6xl text-4xl text-center font-telma bg-[url('/hand.png')] from-[#ffffff07] to-[#fff0] rounded-full  w-5/6  mx-auto lg:w-1/3 mb-2">
             <h2 className="font-black sm:text-6xl text-3xl font-telma">
               This font is called
             </h2>
