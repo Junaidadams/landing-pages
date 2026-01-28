@@ -7,7 +7,7 @@ export const colourTheme = {
   page2: [
     ["#DFD7C6", "#5E5C57", "highlight"],
     ["#977EDB", "#F0ECF8", "highlight"],
-    ["#F9F1C5", "#E091B5", "highlight"],
+    ["#AFBEA3", "#244548", "highlight"],
   ],
 };
 
@@ -22,6 +22,26 @@ export const circleVariants = {
     transition: {
       duration: 1.5,
       ease: "easeInOut",
+    },
+  },
+};
+
+export const navVariants = {
+  open: (height = 1000) => ({
+    clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
+    transition: {
+      type: "spring",
+      stiffness: 20,
+      restDelta: 2,
+    },
+  }),
+  closed: {
+    clipPath: "circle(30px at 40px 40px)",
+    transition: {
+      delay: 0.01,
+      type: "spring",
+      stiffness: 400,
+      damping: 40,
     },
   },
 };

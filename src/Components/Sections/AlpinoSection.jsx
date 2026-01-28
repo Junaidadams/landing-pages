@@ -25,7 +25,7 @@ const AlpinoSection = ({
         whileInView={{ x: [-60, 0, -60] }}
         transition={{ duration: 12, ease: "backInOut", repeat: Infinity }}
         viewport={{ once: false }}
-        className="max-w-full top-0 left-0 absolute opacity z-0 scale-y-[-1]"
+        className="max-w-[90%] top-0 left-0 absolute opacity z-0 scale-y-[-1]"
         src="src/assets/cloudbg.png"
       />
       <div className="w-full md:w-1/2 lg:w-1/3 flex flex-col">
