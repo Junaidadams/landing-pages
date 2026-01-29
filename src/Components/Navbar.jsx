@@ -6,6 +6,7 @@ import { navVariants } from "../../constants";
 
 const Navbar = ({ styling, textColour, bgColour }) => {
   const [isOpen, setIsOpen] = useState(false);
+  console.log(textColour, bgColour);
   return (
     <nav className="absolute top-2 z-20 w-screen">
       <ul
@@ -35,7 +36,8 @@ const Navbar = ({ styling, textColour, bgColour }) => {
             exit="closed"
             variants={navVariants}
             transition={{ duration: 0.5 }}
-            className={`bg-[${bgColour}] text-[${textColour}] bg-opacity-95 absolute top-0 left-0 z-30 flex w-full flex-col space-y-6 pb-10 capitalize shadow-lg md:hidden`}
+            style={{ color: textColour, backgroundColor: bgColour }}
+            className={` bg-opacity-95 absolute top-0 left-0 z-30 flex w-full flex-col space-y-6 pb-10 capitalize shadow-lg md:hidden`}
           >
             <div className="md:hidden">
               <Toggle isOpen={isOpen} onClick={() => setIsOpen(!isOpen)} />
