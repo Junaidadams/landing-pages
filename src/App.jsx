@@ -1,7 +1,6 @@
 import "./App.css";
 
 import { useState } from "react";
-import Navbar from "./Components/Navbar";
 import { motion, AnimatePresence, animate } from "framer-motion";
 import { colourTheme } from "../constants";
 

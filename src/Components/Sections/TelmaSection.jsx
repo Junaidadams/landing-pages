@@ -16,14 +16,14 @@ const TelmaSection = ({
         color: page1Colour[1],
       }}
     >
-      <Navbar textColour={page1Colour[1]} bgColour={page1Colour[0]} />
+      <Navbar textColour={page1Colour[0]} bgColour={page1Colour[1]} />
 
-      <div className="flex flex-col xl:flex-row w-full">
+      <div className="flex flex-col  w-full">
         <div className="font-black sm:text-5xl md:text-6xl text-4xl text-center font-telma  from-[#ffffff07] to-[#fff0] rounded-full  w-5/6  mx-auto lg:w-1/3 mb-2">
           <img
             src="/hand.png"
             alt="hand reaching with pencil"
-            className="grayscale rounded-b-full absolute z-0 opacity-40 w-9/12 m-auto top-1/2 left-1/2 -translate-1/2 "
+            className="grayscale rounded-b-full absolute z-0 opacity-40 w-3/4 md:w-1/2 lg:w-2/5 m-auto top-1/2 left-1/2 -translate-1/2 "
           />
           <div className="z-20 relative">
             <h2 className="font-black sm:text-6xl text-3xl font-telma  ">
@@ -36,16 +36,17 @@ const TelmaSection = ({
           </div>
         </div>
         <div className="m-auto w-5/6 lg:w-1/3 flex flex-col space-y-2 z-20 relative">
-          <h2 className="font-black text-center xl:text-left text-xl sm:text-2xl font-telma">
+          <h2 className="font-black text-center text-xl sm:text-2xl font-telma">
             You should use it
           </h2>
-          <p className="text-sm sm:text-lg font-sans text-center xl:text-left">
-            Telma is an informal handwritten typeface family. Its letterforms
-            have a noticeable contrast between thick and thin, which gives
-            certain characters' quirky structures a more formal characteristic.
+          <p className="text-sm sm:text-lg font-sans text-center ">
+            Telma is an informal <span className="font-bold">handwritten</span>{" "}
+            typeface family. Its letterforms have a noticeable contrast between
+            thick and thin, which gives certain characters' quirky structures a
+            more formal characteristic.
           </p>
           <button
-            className="text-xl py-4 px-3 mt-1 m-auto xl:mr-auto xl:ml-0 rounded-sm font-black font-telma animate-pulse hover:animate-none hover:cursor-pointer hover:shadow-lg shadow-[#ffffff1e]"
+            className="text-xl py-4 px-3 mt-1 m-auto rounded-sm font-black font-telma animate-pulse hover:animate-none hover:cursor-pointer hover:shadow-lg shadow-[#ffffff1e]"
             style={{
               background: page1Colour[1],
               color: page1Colour[0],

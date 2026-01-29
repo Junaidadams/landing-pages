@@ -8,9 +8,9 @@ const Navbar = ({ styling, textColour, bgColour }) => {
   const [isOpen, setIsOpen] = useState(false);
   console.log(textColour, bgColour);
   return (
-    <nav className="absolute top-2 z-20 w-screen">
+    <nav className="absolute top-0 z-30 w-full">
       <ul
-        className={`flex flex-row space-x-2 sm:space-x-6 text-sm sm:text-xl md:text-2xl font-sans tracking-wide w-full ${styling} hidden md:flex relative`}
+        className={`flex flex-row space-x-2 sm:space-x-6 text-sm sm:text-xl md:text-2xl font-sans tracking-wide w-fit ${styling} hidden md:flex relative m-auto`}
       >
         <li className="">
           <a href="#telma">Telma</a>
@@ -37,7 +37,7 @@ const Navbar = ({ styling, textColour, bgColour }) => {
             variants={navVariants}
             transition={{ duration: 0.5 }}
             style={{ color: textColour, backgroundColor: bgColour }}
-            className={` bg-opacity-95 absolute top-0 left-0 z-30 flex w-full flex-col space-y-6 pb-10 capitalize shadow-lg md:hidden`}
+            className="absolute top-0 h-fit left-0 z-30 flex w-full flex-col space-y-6 pb-10 shadow-lg md:hidden"
           >
             <div className="md:hidden">
               <Toggle isOpen={isOpen} onClick={() => setIsOpen(!isOpen)} />
@@ -47,7 +47,7 @@ const Navbar = ({ styling, textColour, bgColour }) => {
               <li>
                 <a
                   href="#telma"
-                  className="m-auto font-light tracking-tighter"
+                  className="m-auto font-light tracking-tighter font-telma"
                   onClick={() => setIsOpen(false)} // Close menu on link click
                 >
                   Telma
@@ -55,11 +55,11 @@ const Navbar = ({ styling, textColour, bgColour }) => {
               </li>
               <li>
                 <a
-                  href="#telma"
-                  className="m-auto font-light tracking-tighter"
+                  href="#alpino"
+                  className="m-auto font-light tracking-tighter font-alpino"
                   onClick={() => setIsOpen(false)} // Close menu on link click
                 >
-                  Telma
+                  Alpino
                 </a>
               </li>
               <li>
